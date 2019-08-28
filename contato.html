@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site</title>
+</head>
+
+<style>
+    #logo {
+        width: 850px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid 2px black;
+        border-radius: 80px;
+    }
+
+    #NAV {
+        border-radius: 20px;
+        padding: 15px;
+        margin-top: 5px;
+        background-color: thistle;
+        border: solid 2px black;
+    }
+
+    a {
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+
+    #content {
+        border-radius: 20px;
+        height: 600px;
+        margin-top: 5px;
+        background-color: white;
+        border: solid 2px black;
+    }
+
+    form {
+        margin-left: 5px;
+        margin: auto;
+        width: 370px;
+        height: 380px;
+        background-color: palegreen;
+        border: solid 2px black;
+        border-radius: 15px;
+        margin-top: 25px;
+    }
+
+    input,
+    label,
+    select,
+    option,
+    textarea {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        width: 290px;
+    }
+
+    #botao {
+        width: 144px;
+        border: solid 1px black;
+        border-radius: 8px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: -12px;
+        width: 1887px;
+        border-radius: 5px;
+        background-color: navajowhite;
+        text-align: center
+    }
+</style>
+
+<body style="background-color: violet">
+    <a href="index.html"><img src="img/logo.png" id="logo"></a>
+    <div id="NAV">
+        <a href="index.html" style="color: cornflowerblue">INÍCIO |</a>
+        <a href="contato.html" style="color: coral">CONTATO |</a>
+        <a href="imagens.html" style="color: forestgreen">IMAGENS</a>
+    </div>
+    <div id="content">
+        <form action="#">
+            <label for="nome">Nome</label> <br>
+            <input placeholder="Escreva seu nome" type="text" value="" id="nome" size="15px"> <br>
+
+            <label for="email">E-Mail</label> <br>
+            <input placeholder="Escreva seu E-Mail" type="email"> <br>
+
+            <label for="cidade">Cidade</label> <br>
+            <select name="cidade"">
+                <option selected>Jaraguá do Sul</option>
+                <option>Joinville</option>
+                <option>Corupá</option>
+                <option>Floripa</option>
+            </select> <br>
+
+            <textarea placeholder=" Deixe sua opinião" name="textarea" cols="25" rows="10"></textarea> <br>
+
+                <!-- BOTÕES -->
+
+                <input id="botao" type="submit" value="Enviar" onclick="alert('enVIADO')">
+                <input id="botao" type="reset" value="Excluir">
+        </form>
+    </div>
+    <div class="footer">
+        Direitos reservados ©
+    </div>
+</body>
+
+</html>
